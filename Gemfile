@@ -45,3 +45,12 @@ group :development do
   gem 'spring'
 end
 
+#For stylesheets
+gem 'bootstrap-sass'
+
+#Apllies prefixes for different Browsers
+gem "autoprefixer-rails"
+
+#SASS powered version of FontAwesome
+gem 'font-awesome-sass'
+
