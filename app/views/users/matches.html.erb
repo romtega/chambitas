@@ -1,2 +1,32 @@
-<h1>Users#matches</h1>
-<p>Find me in app/views/users/matches.html.erb</p>
+<div class="container">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Nombre</th>
+				<th>Giro</th>
+				<th>Matched on</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row"><%= image_tag "avatar.png", size: "30x30" %></th>
+				<td>Nombre del usuario</td>
+				<td>Pintura</td>
+				<td>05/03/2016</td>
+				<td class="text-right">
+				<a href="#" data-toggle="tooltip" data-placement="top" title="Correo"><i class="fa fa-envelope"></i></a>
+				<a href="#" data-toggle="tooltip" data-placement="top" title="Telefono"><i class="fa fa-phone"></i></a>
+				<a href="#" data-toggle="tooltip" data-placement="top" title="Borrar"><i class="fa fa-times"></i></a>
+			</td>
+			</tr>
+		</tbody>
+	</table>	
+</div>
+
+<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
