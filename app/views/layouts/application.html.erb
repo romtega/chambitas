@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chambitas</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Chambitas</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
 </head>
 <body>
 
-<%= yield %>
+	<nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+		<ul class="nav navmenu-nav">
+			<li class="active"><a href="#"><i class="fa fa-users"></i>Buscar</li>
+			<li class="active"><a href="#"><i class="fa fa-balance-scale"></i>Trabajos</li>
+			<li class="active"><a href="#"><i class="fa fa-cog"></i>Preferencias de Busqueda</li>
+			<li class="active"><a href="#"><i class="fa fa-edit"></i>Editar Perfil</li>
 
-</body>
-</html>
+		</ul>
+	</nav>
+
+	<div class="navbar navbar-default navbar-fixed-top">
+
+		<button type="button" class="navbar-toggle button-nav" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+			<i class="fa fa-cog"></i>
+		</button>
+
+		<button type="button" class="navbar-toggle button-nav pull-right" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+			<i class=" fa fa-users"></i>
+		</button>
+
+		<a class="navbar-brand" href="#">
+			Chambitas </a>
+
+		</div>
+
+		<%= yield %>
+
+	</body>
+	</html>
