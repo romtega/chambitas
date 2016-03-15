@@ -1,2 +1,54 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<div class="container">
+	<h4 class="text-uppercase"><small>Busco:</small></h4>
+	<div class="dropdown">
+		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+			Escoge
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			<li role="presentation" class="dropdown-header">Quiero encontrar</li>
+			<li role="presentation"><a role="menuitem" tableindex="-1" href="#">Trabajo</a></li>
+			<li role="presentation"><a role="menuitem" tableindex="-1" href="#">Empleado</a></li>
+		</ul>
+	</div>
+
+	<h4 class="text-uppercase"><small>Descripcion o Referencias</small></h4>
+	<textarea class="form-control" rows="5"></textarea>
+
+	<h4 class="text-uppercase"><small>Tipo de Trabajo que Buscas</small></h4>
+<input type="text" class="form-control">
+
+<h4 class="text-uppercase"><small>Distancia</small></h4>
+	<div class="dropdown">
+		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+			Escoge
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			<li role="presentation" class="dropdown-header">en Km</li>
+			<li role="presentation"><a role="menuitem" tableindex="-1" href="#">0-10</a></li>
+			<li role="presentation"><a role="menuitem" tableindex="-1" href="#">10-20</a></li>
+			<li role="presentation"><a role="menuitem" tableindex="-1" href="#">20-30</a></li>
+			<li role="presentation"><a role="menuitem" tableindex="-1" href="#">30-40</a></li>
+		</ul>
+	</div>
+	<br />
+<div class="text-center">
+	<div class="fileinput fileinput-new" data-provides="fileinput">
+  <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">
+<img data-src="holder.js/100%x100%" src="../assets/avatar.png">
+  </div>
+
+  <div>
+    <span class="btn btn-default btn-file"><span class="fileinput-new">Selecciona una Imagen</span><span class="fileinput-exists">Cambiar</span><input type="file" name="..."></span>
+    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Borrar</a>
+  </div>
+</div>
+</div>
+
+<button type="button" class="btn btn-primary btn-block btn-xs">Guardar</button>
+<br />
+<a href="">Cancelar my cuenta</a>
+
+
+</div>
