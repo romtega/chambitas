@@ -45,12 +45,19 @@ group :development do
   gem 'spring'
 end
 
-#For stylesheets
+# For stylesheets
 gem 'bootstrap-sass'
 
-#Apllies prefixes for different Browsers
+# Apllies prefixes for different Browsers
 gem "autoprefixer-rails"
 
-#SASS powered version of FontAwesome
+# SASS powered version of FontAwesome
 gem 'font-awesome-sass'
+
+# Authentification with FB
+gem 'omniauth-facebook'
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
+
 
