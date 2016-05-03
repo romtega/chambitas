@@ -4,38 +4,39 @@
 
 	<div class="center-block">
 
-	<a class="btn btn-social btn-block btn-lg btn-facebook">
-		<i class="fa fa-facebook"></i> Facebook
-	</a>
-	<br />
-	<a class="btn btn-social btn-block btn-lg btn-google">
-		<i class="fa fa-google"></i>	Google
-	</a>
-	<br>
-	<a class="btn btn-social btn-block btn-lg btn-linkedin">
-		<i class="fa fa-linkedin"></i>	Linkedln
-	</a>
+		<%= link_to "auth/facebook", class: "btn btn-social btn-block btn-lg btn-facebook" do %>
+		<i class="fa fa-facebook"></i> Con Facebook
+		<% end %>
+		<br />
+		
+		<a class="btn btn-social btn-block btn-lg btn-google">
+			<i class="fa fa-google"></i> Con Google
+		</a>
+		<br>
+		<a class="btn btn-social btn-block btn-lg btn-linkedin">
+			<i class="fa fa-linkedin"></i>	Con Linkedln
+		</a>
 
-</div>
+	</div>
 </div>
 
 <script type="text/javascript">
-	jQuery(function($) {
-		$.supersized({
-			slide_interval   : 4000,
-			transition       : 1,
-			transition_speed : 700, 
-			slide_links      : 'blank',
+jQuery(function($) {
+	$.supersized({
+		slide_interval   : 4000,
+		transition       : 1,
+		transition_speed : 700, 
+		slide_links      : 'blank',
 
-			slides           : [
-			{image : 'assets/bg1.jpg'},
-			{image : 'assets/bg2.jpg'},
-			{image : 'assets/bg3.jpg'},
-			{image : 'assets/bg4.jpg'},
-			{image : 'assets/bg5.jpg'}
+		slides           : [
+		{image : 'assets/bg1.jpg'},
+		{image : 'assets/bg2.jpg'},
+		{image : 'assets/bg3.jpg'},
+		{image : 'assets/bg4.jpg'},
+		{image : 'assets/bg5.jpg'}
 
-			]
+		]
 
-		});
 	});
+});
 </script>
